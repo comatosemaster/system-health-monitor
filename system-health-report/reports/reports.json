@@ -1,0 +1,81 @@
+{
+  "generated_at": "2025-10-28T16:05:59",
+  "cpu_ram": {
+    "cpu_percent": 26.7,
+    "ram_total": "16.95 GB",
+    "ram_used": "14.87 GB",
+    "ram_percent": 87.7
+  },
+  "disks": [
+    {
+      "device": "C:\\",
+      "mountpoint": "C:\\",
+      "total": "1.02 TB",
+      "used": "916.35 GB",
+      "free": "106.6 GB",
+      "percent": 89.6
+    }
+  ],
+  "folders": [
+    {
+      "name": "Program Files (x86)",
+      "path": "C:\\Program Files (x86)",
+      "size": 451476205209,
+      "size_human": "451.48 GB"
+    },
+    {
+      "name": "Users",
+      "path": "C:\\Users",
+      "size": 291445958954,
+      "size_human": "291.45 GB"
+    },
+    {
+      "name": "Games",
+      "path": "C:\\Games",
+      "size": 56605470345,
+      "size_human": "56.61 GB"
+    },
+    {
+      "name": "Windows",
+      "path": "C:\\Windows",
+      "size": 37256552748,
+      "size_human": "37.26 GB"
+    },
+    {
+      "name": "Program Files",
+      "path": "C:\\Program Files",
+      "size": 14724304951,
+      "size_human": "14.72 GB"
+    },
+    {
+      "name": "ProgramData",
+      "path": "C:\\ProgramData",
+      "size": 7912646522,
+      "size_human": "7.91 GB"
+    },
+    {
+      "name": "Photoshop2021x64",
+      "path": "C:\\Photoshop2021x64",
+      "size": 4218637435,
+      "size_human": "4.22 GB"
+    },
+    {
+      "name": "$Recycle.Bin",
+      "path": "C:\\$Recycle.Bin",
+      "size": 3812186397,
+      "size_human": "3.81 GB"
+    },
+    {
+      "name": "Temp",
+      "path": "C:\\Temp",
+      "size": 2063366031,
+      "size_human": "2.06 GB"
+    },
+    {
+      "name": "124043bf4a17ba33444efb",
+      "path": "C:\\124043bf4a17ba33444efb",
+      "size": 248949265,
+      "size_human": "248.95 MB"
+    }
+  ]
+}

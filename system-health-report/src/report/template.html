@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Health Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #111; color: #ddd; padding: 20px; }
+        h1, h2 { color: #4db8ff; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+        th { background-color: #222; }
+    </style>
+</head>
+<body>
+    <h1>System Health Report</h1>
+    <p>Generated at: {{ data.generated_at }}</p>
+
+    <h2>CPU and RAM</h2>
+    <p>CPU Usage: {{ data.cpu_ram.cpu_percent }}%</p>
+    <p>RAM Used: {{ data.cpu_ram.ram_used }} / {{ data.cpu_ram.ram_total }} ({{ data.cpu_ram.ram_percent }}%)</p>
+
+    <h2>Disks</h2>
+    <table>
+        <tr><th>Device</th><th>Total</th><th>Used</th><th>Free</th><th>Usage %</th></tr>
+        {% for disk in data.disks %}
+        <tr>
+            <td>{{ disk.device }}</td>
+            <td>{{ disk.total }}</td>
+            <td>{{ disk.used }}</td>
+            <td>{{ disk.free }}</td>
+            <td>{{ disk.percent }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Top {{ data.folders|length }} Folders</h2>
+    <table>
+        <tr><th>Folder</th><th>Path</th><th>Size</th></tr>
+        {% for folder in data.folders %}
+        <tr>
+            <td>{{ folder.name }}</td>
+            <td>{{ folder.path }}</td>
+            <td>{{ folder.size_human }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
